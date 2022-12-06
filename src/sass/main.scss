@@ -1,0 +1,28 @@
+// Util styles
+@import './utils/variables';
+@import './utils/visualy-hiden';
+
+// Base styles
+@import './base/reset-styles';
+@import './base/body-settings';
+@import './base/js-selectors';
+
+// Components styles
+@import './components/container-setting';
+@import './components/section-settings';
+@import './components/animation';
+@import './components/buttons';
+@import './components/uppercase';
+@import './components/titlecase';
+@import './components/modal-window';
+
+// layout styles
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/price';
+@import './layout/benefits';
+@import './layout/masters';
+@import './layout/gallery';
+@import './layout/contacts';
+@import './layout/footer';

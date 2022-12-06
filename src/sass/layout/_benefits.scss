@@ -1,0 +1,79 @@
+/**
+  |============================
+  | Benefits section
+  |============================
+*/
+
+.benefits__container {
+  @extend %container;
+}
+.benefits__section {
+  @extend %section;
+  display: flex;
+}
+
+.benefits__list {
+  @extend %list;
+  width: 370px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-left: 100px;
+}
+.benefits__item {
+  width: 170px;
+  padding: 20px;
+  background: #f7f7f7;
+}
+.benefits__item:nth-child(2n) {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.benefits-number {
+  position: relative;
+  margin-bottom: 6px;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--third-txt-cl);
+}
+.benefits__decore {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  text-align: center;
+  color: var(--hover-txt-cl);
+}
+.benefits-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: normal;
+  color: var(--third-txt-cl);
+}
+.benefits__box {
+  width: 500px;
+  margin-left: 130px;
+}
+.benefits__uppertitle {
+  @extend %uppercase;
+  color: var(--third-txt-cl);
+  &::before {
+    background: var(--third-txt-cl);
+  }
+}
+
+.benefits__title {
+  @extend %titlecase;
+}
+.benefits__txt {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+}

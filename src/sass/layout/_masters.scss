@@ -1,0 +1,72 @@
+/**
+  |============================
+  | Masters section
+  |============================
+*/
+
+.masters__container {
+  @extend %container;
+}
+.masters__section {
+  @extend %section;
+}
+.masters__uppertitle {
+  @extend %uppercase;
+  color: var(--third-txt-cl);
+
+  &::before {
+    content: '';
+    background: var(--third-txt-cl);
+  }
+}
+.masters__title {
+  @extend %titlecase;
+}
+.masters__masters__list {
+  @extend %list;
+  display: flex;
+  gap: 30px;
+}
+
+.masters__social--ccontainer {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.masters__social--icon {
+  fill: currentColor;
+}
+.masters__social--link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--third-txt-cl);
+  background-color: var(--primary-bcg-cl);
+
+  transition-property: color;
+  @extend %animation;
+
+  &:hover,
+  &:focus {
+    color: var(--hover-icon-bcg);
+  }
+}
+.masters__name {
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+.masters_profession {
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-align: center;
+  color: var(--hover-txt-cl);
+  margin-bottom: 30px;
+}

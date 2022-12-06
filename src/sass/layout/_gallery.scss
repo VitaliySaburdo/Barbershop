@@ -1,0 +1,27 @@
+/**
+  |============================
+  | Gallery section
+  |============================
+*/
+
+.gallery__container {
+  @extend %container;
+}
+.gallery__section {
+  @extend %section;
+}
+
+.gallery__uppertitle {
+  @extend %uppercase;
+  color: var(--third-txt-cl);
+
+  &::before {
+    content: '';
+    background: var(--third-txt-cl);
+  }
+}
+.gallery__list {
+  @extend %list;
+  display: flex;
+  gap: 30px;
+}

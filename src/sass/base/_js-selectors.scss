@@ -1,0 +1,11 @@
+.no-scroll {
+  overflow: hidden;
+}
+
+.js-no-transparency {
+  transition-property: background-color;
+  transition-duration: 600ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(16, 18, 27, 0.4);
+  backdrop-filter: blur(10px);
+}

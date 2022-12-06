@@ -1,0 +1,62 @@
+/**
+  |============================
+  | About section
+  |============================
+*/
+
+.about__container {
+  @extend %container;
+}
+
+.about__section {
+  @extend %section;
+  display: flex;
+}
+
+.about__list {
+  @extend %list;
+  display: flex;
+  gap: 30px;
+  margin-right: 64px;
+}
+
+.about-right {
+  width: 500px;
+}
+
+.uppertitle {
+  @extend %uppercase;
+  color: var(--third-txt-cl);
+  &::before {
+    background: var(--third-txt-cl);
+  }
+}
+
+.about-slogan {
+  @extend %titlecase;
+}
+.about-title {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  margin-bottom: 20px;
+}
+.about-txt {
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  margin-bottom: 40px;
+}
+
+.about-btn {
+  @extend %btn;
+  color: var(--third-txt-cl);
+  @extend %btn;
+
+  @extend %animation;
+  transition-property: background-color;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-btn-cl);
+    color: var(--wite-txt-cl);
+  }
+}

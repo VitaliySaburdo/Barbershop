@@ -1,0 +1,14 @@
+/* Base styles */
+
+body {
+  background-color: var(--primary-bcg-cl);
+  color: var(--primary-txt-cl);
+  font-family: var(--primary-font);
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+// Плавный скрол
+html {
+  scroll-behavior: smooth;
+}

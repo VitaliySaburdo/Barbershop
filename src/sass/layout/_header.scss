@@ -1,0 +1,99 @@
+/**
+  |============================
+  | Heder
+  |============================
+*/
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @extend %container;
+  background-color: transparent;
+}
+.header-logo {
+  @media screen and (max-width: 480px) {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+  }
+  position: absolute;
+  left: -15px;
+}
+// Nav
+.nav {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  margin-left: 153px;
+  margin-right: auto;
+}
+.nav__list {
+  @extend %list;
+  display: flex;
+  gap: 40px;
+  margin-left: auto;
+}
+.nav__link {
+  @extend %link;
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+
+  color: var(--wite-txt-cl);
+  padding-top: 52px;
+  padding-bottom: 52px;
+
+  @extend %animation;
+  transition-property: color;
+
+  &:hover,
+  &:focus {
+    color: var(--hover-txt-cl);
+  }
+}
+// Contacts
+.header__phone {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  display: block;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  margin-right: 40px;
+  @extend %link;
+  color: var(--wite-txt-cl);
+  padding-top: 52px;
+  padding-bottom: 52px;
+
+  @extend %animation;
+  transition-property: color;
+
+  &:hover,
+  &:focus {
+    color: var(--hover-txt-cl);
+  }
+}
+.header__button {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  @extend %btn;
+
+  @extend %animation;
+  transition-property: background-color;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-btn-cl);
+  }
+}

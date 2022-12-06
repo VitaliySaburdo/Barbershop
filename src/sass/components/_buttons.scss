@@ -1,0 +1,38 @@
+// Buttons
+
+%btn {
+  min-width: 160px;
+  min-height: 40px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px, solid;
+  border-color: var(--bottom-border-color);
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+%hero-btn {
+  width: 60px;
+  height: 24px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid;
+  padding-bottom: 8px;
+  padding: 0;
+  padding-bottom: 8px;
+  cursor: pointer;
+  background-color: transparent;
+}
