@@ -1,0 +1,77 @@
+<!-- Contacts section -->
+<section class="contacts__container" id="contacts">
+  <div class="contacts__section">
+    <div class="contacts__left-box">
+      <h2 class="contacts__title">Онлайн-запись</h2>
+      <form>
+        <div class="contacts__imput--container">
+          <label class="contacts__group">
+            <input
+              class="form-input"
+              type="text"
+              name="username"
+              id="name"
+              required
+              placeholder="Полное имя"
+            />
+            <span class="contacts-form__label">Имя<sup>*</sup></span>
+          </label>
+
+          <label class="contacts__group">
+            <input
+              class="form-input current"
+              type="tel"
+              name="phone-number"
+              id="phone"
+              required
+              placeholder="+380 XX XXX XX XX"
+            />
+            <span class="contacts-form__label">Телефон<sup>*</sup></span>
+          </label>
+        </div>
+        <label class="contacts__group--messge">
+          <textarea
+            class="contacts-form__field--coment"
+            name="coment"
+            id="coment"
+            cols="10"
+            rows="5"
+          ></textarea>
+          <span class="contacts-form__label">Сообщение<sup>*</sup></span>
+        </label>
+        <button class="contacts__btn" type="submit">отправить</button>
+      </form>
+    </div>
+    <div class="contacts__right-box">
+      <h2 class="contacts__title">Контакты</h2>
+      <address class="contacts__address">
+        <a
+          href="https://goo.gl/maps/T48EKb5HYL78AEtV7"
+          class="contacts__link"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          ул. Васильковая, 7А <br />Киев, 08132</a
+        >
+      </address>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <a
+            href="tel:+380441111111"
+            class="contacts__link"
+            rel="noopener noreferrer"
+            target="_blank"
+            >+38 044 111 11 11</a
+          >
+        </li>
+        <li class="contacts__item">
+          <a href="mailto:barbershop@email.com" class="contacts__link"
+            >barbershop@email.com</a
+          >
+        </li>
+      </ul>
+      <h3 class="contacts__uppertitle">время работы</h3>
+      <p class="contacts__txt">Ежедневно с 9:00 до 22:00</p>
+    </div>
+  </div>
+</section>

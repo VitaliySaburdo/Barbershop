@@ -1,0 +1,94 @@
+<!-- Modal window -->
+<div class="modal__backdrop is-hidden" data-modal>
+  <div class="modal__window">
+    <button class="modal__button" type="button" data-modal-close>
+      <svg width="18" height="18" class="modal__button--icon-close">
+        <use href="./images/sprite.svg#close-icon"></use>
+      </svg>
+    </button>
+    <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+    <form class="modal-form">
+      <div class="modal-form__field">
+        <label class="modal-form__group" for="username">
+          <input
+            class="modal-form__imput"
+            type="text"
+            name="username"
+            id="username"
+            required
+            placeholder="Введите Ваше полное имя"
+          />
+          <span class="modal-form__label">Имя</span>
+        </label>
+      </div>
+      <div class="modal-form__field">
+        <label class="modal-form__group" for="tel">
+          <input
+            class="modal-form__imput"
+            type="tel"
+            name="username"
+            id="tel"
+            required
+            placeholder="Ведите телефон в формате +380 XX XXX XX XX"
+          />
+          <span class="modal-form__label">Телефон</span>
+        </label>
+      </div>
+      <div class="modal-form__field">
+        <label class="modal-form__group" for="mail">
+          <input
+            class="modal-form__imput"
+            type="email"
+            name="username"
+            id="mail"
+            required
+            placeholder="Введите Ваш электронный адресс"
+          />
+          <span class="modal-form__label">E-mail</span>
+        </label>
+      </div>
+      <div class="modal-form__field">
+        <label>
+          <textarea
+            class="modal-form__field--coment"
+            name="modal-coment"
+            id="modal-coment"
+            cols="10"
+            rows="5"
+            placeholder="Введите текст"
+          ></textarea>
+          <span class="modal-form__label">Сообщение</span>
+        </label>
+      </div>
+      <div class="modal-checkbox">
+        <label class="modal-checkbox__lable" for="checkbox">
+          <input
+            class="checkbox-input"
+            type="checkbox"
+            name="checkbox"
+            value=""
+            id="checkbox"
+            required
+          />
+          <span class="checkbox-icon">
+            <svg width="20" height="20" aria-label="checkbox-switch">
+              <use
+                class="checkbox-icon_not-checked"
+                href="./images/sprite.svg#checkbox-unchecked"
+              ></use>
+              <use
+                class="checkbox-icon_checked"
+                href="./images/sprite.svg#checkbox-checked"
+              ></use>
+            </svg>
+          </span>
+          <span>Соглашаюсь с рассылкой и принимаю</span>
+          <a class="checkbox-link link" href="">Условия договора</a>
+        </label>
+      </div>
+      <div class="modal-botton__container">
+        <button class="modal-botton__submit" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+</div>
