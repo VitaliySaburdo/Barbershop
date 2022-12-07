@@ -14,10 +14,18 @@
   function onOpenModal() {
     refs.modal.classList.remove('is-hidden');
     window.addEventListener('keydown', onEscPressKey);
+    const body = document.body;
+    body.style.height = '100vh';
+    body.style.overflowY = 'hidden';
   }
   function onCloseModal() {
     refs.modal.classList.add('is-hidden');
     window.removeEventListener('keydown', onEscPressKey);
+    const body = document.body;
+    body.style.position = '';
+    body.style.top = '';
+    body.style.height = '';
+    body.style.overflowY = '';
   }
   function onBackdropClick(evt) {
     if (evt.currentTarget === evt.target) {
