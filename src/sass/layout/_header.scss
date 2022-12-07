@@ -14,24 +14,16 @@
   position: relative;
   display: flex;
   align-items: center;
-
-  @extend %container;
   background-color: transparent;
 }
 .header-logo {
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 1200px) {
     position: absolute;
-    left: 15px;
-    top: 15px;
+    left: -15px;
   }
-  position: absolute;
-  left: -15px;
 }
 // Nav
 .nav {
-  @media screen and (max-width: 480px) {
-    display: none;
-  }
   margin-left: 153px;
   margin-right: auto;
 }
